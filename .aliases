@@ -16,3 +16,6 @@ alias paclo='pacman -Qdt'
 alias pacro='paclo && sudo pacman -Rns $(pacman -Qtdq)'
 alias pacc='sudo pacman -Scc'
 alias paclf='pacman -Ql'
+
+alias ..='cd ..'
+alias lg='lazygit'
