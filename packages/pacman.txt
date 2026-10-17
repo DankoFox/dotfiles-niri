@@ -20,6 +20,7 @@ kitty                   # GPU-accelerated terminal emulator
 wl-clipboard            # Wayland clipboard utilities (wl-copy, wl-paste)
 cliphist                # Wayland clipboard history manager
 brightnessctl           # Screen backlight and brightness control
+wlsunset                # Day/night gamma adjustments for Wayland compositors
 playerctl               # Media player controller (MPRIS) for keyboard media keys
 xdg-desktop-portal      # Desktop portal frontend for screen sharing and file dialogues
 xdg-desktop-portal-gtk  # GTK backend for xdg-desktop-portal

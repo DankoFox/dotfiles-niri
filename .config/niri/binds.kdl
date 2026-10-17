@@ -19,6 +19,7 @@ binds {
     Alt+V hotkey-overlay-title="Toggle Clipboard History" { spawn-sh "~/.config/fuzzel/cliphist-picker.sh"; }
     Mod+B hotkey-overlay-title="Run an Application: Zen Browser" { spawn "zen-browser"; }
     Mod+E hotkey-overlay-title="Open file explorer" { spawn "nemo"; }
+    Mod+N hotkey-overlay-title="Toggle Night Light (wlsunset)" { spawn-sh "~/.config/niri/toggle-nightlight.sh"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
