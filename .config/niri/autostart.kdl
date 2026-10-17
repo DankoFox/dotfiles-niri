@@ -25,4 +25,7 @@ spawn-at-startup "wlsunset" "-l" "10.8" "-L" "106.6" "-t" "4000"
 // Wallpaper daemon and restore (awww)
 spawn-sh-at-startup "~/.config/waybar/scripts/init-wallpaper.sh"
 
+// Idle management daemon (hypridle)
+spawn-at-startup "hypridle"
+
 
