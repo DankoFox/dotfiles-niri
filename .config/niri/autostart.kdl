@@ -15,3 +15,7 @@ spawn-at-startup "fcitx5" "-d"
 // Mako notification daemon
 spawn-at-startup "mako"
 
+// Clipboard history daemons (text & images)
+spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
+spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
+

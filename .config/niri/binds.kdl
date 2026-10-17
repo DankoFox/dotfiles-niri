@@ -16,6 +16,7 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Alt+Space hotkey-overlay-title="Toggle Fuzzel" { spawn "sh" "-c" "pkill -x fuzzel || fuzzel"; }
+    Alt+V hotkey-overlay-title="Toggle Clipboard History" { spawn-sh "~/.config/fuzzel/cliphist-picker.sh"; }
     Mod+B hotkey-overlay-title="Run an Application: Zen Browser" { spawn "zen-browser"; }
     Mod+E hotkey-overlay-title="Open file explorer" { spawn "nemo"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
