@@ -1,0 +1,8 @@
+# ==============================================================================
+# AUR PACKAGES (Arch User Repository)
+# ==============================================================================
+# Format: One package per line. Empty lines and lines starting with '#' are ignored.
+
+zen-browser-bin         # Zen Browser (configured in binds.kdl: Mod+B)
+vesktop-bin             # Discord client with Vencord support
+bibata-cursor-theme-bin # Bibata cursor theme (configured in niri misc.kdl)

@@ -1,0 +1,7 @@
+# Files and directories to ignore when stowing
+bootstrap\.sh
+packages
+scripts
+README\.md
+\.git
+\.stow-local-ignore

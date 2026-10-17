@@ -1,0 +1,59 @@
+# ==============================================================================
+# PACMAN PACKAGES (Official Repositories & EndeavourOS Repo)
+# ==============================================================================
+# Format: One package per line. Empty lines and lines starting with '#' are ignored.
+
+# --- Core Build & Dotfiles Tools ---
+base-devel              # Essential build tools (gcc, make, patch, etc.)
+git                     # Version control
+stow                    # GNU Stow for managing dotfiles symlinks
+pacman-contrib          # Pacman maintenance tools (paccache.timer, checkupdates)
+
+# --- Compositor & Wayland Desktop (Niri Stack) ---
+niri                    # Scrollable-tiling Wayland compositor
+xwayland-satellite      # Dedicated Xwayland manager outside the compositor
+waybar                  # Highly customizable Wayland status bar
+fuzzel                  # Fast Wayland application launcher / runner
+swaylock                # Wayland screen locker
+kitty                   # GPU-accelerated terminal emulator
+wl-clipboard            # Wayland clipboard utilities (wl-copy, wl-paste)
+cliphist                # Wayland clipboard history manager
+brightnessctl           # Screen backlight and brightness control
+playerctl               # Media player controller (MPRIS) for keyboard media keys
+xdg-desktop-portal      # Desktop portal frontend for screen sharing and file dialogues
+xdg-desktop-portal-gtk  # GTK backend for xdg-desktop-portal
+
+# --- Display / Login Manager ---
+ly                      # Lightweight TUI display manager
+
+# --- Shell & Modern Terminal CLI ---
+zsh                     # Z Shell
+starship                # Fast, customizable cross-shell prompt
+fzf                     # Command-line fuzzy finder
+zoxide                  # Smarter directory navigation ('z' command)
+eza                     # Modern, feature-rich replacement for ls
+lazygit                 # Simple terminal UI for git
+tree                    # Directory listing in a tree-like format
+ripgrep                 # Blazingly fast search tool (used by Neovim & CLI)
+fd                      # Simple, fast alternative to find (used by Neovim & CLI)
+
+# --- Development & Text Editors ---
+neovim                  # Modern modal text editor
+tree-sitter-cli         # Tree-sitter CLI for Neovim syntax highlighting parsers
+opencode                # Open-source terminal AI coding assistant
+
+
+# --- Fonts & Icons ---
+ttf-iosevka-nerd        # Iosevka Nerd Font (configured in kitty.conf)
+ttf-jetbrains-mono-nerd # JetBrainsMono Nerd Font (configured in fuzzel.ini & waybar)
+noto-fonts              # Default Unicode fonts
+noto-fonts-cjk          # Asian character support (CJK)
+noto-fonts-emoji        # Emoji support
+
+# --- GUI Applications & Audio ---
+nemo                    # Graphical file manager (configured in binds.kdl Mod+E)
+feh                     # Lightweight image viewer & wallpaper tool
+pavucontrol             # PulseAudio / PipeWire volume control GUI
+
+# --- System Daemons & Utilities ---
+earlyoom                # Early OOM daemon to prevent system freeze on low memory

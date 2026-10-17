@@ -19,3 +19,9 @@ alias paclf='pacman -Ql'
 
 alias ..='cd ..'
 alias lg='lazygit'
+
+# --- Dotfiles & Package Management ---
+alias dotfiles='cd ~/.dotfiles'
+alias dotfiles-check='~/.dotfiles/scripts/check-packages.sh'
+alias dotfiles-stow='cd ~/.dotfiles && stow -v -R -t ~ .'
+
