@@ -7,5 +7,10 @@ AGENTS\.md
 GEMINI\.md
 \.agents
 \.git
+\.gitignore
 \.stow-local-ignore
+bookmark-metadata
+bookmarks
+
+
 

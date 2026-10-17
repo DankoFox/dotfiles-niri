@@ -1,0 +1,8 @@
+# Nemo runtime state & metadata
+.config/nemo/bookmark-metadata
+bookmark-metadata
+
+# Editors and swap files
+*.swp
+*.swo
+*~

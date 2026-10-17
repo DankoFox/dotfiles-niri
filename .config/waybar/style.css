@@ -85,6 +85,7 @@ window#waybar.chromium {
 #memory,
 #disk,
 #temperature,
+#custom-wallpaper,
 #backlight,
 #network,
 #pulseaudio,
@@ -147,6 +148,14 @@ window#waybar.chromium {
 
 label:focus {
   background-color: #000000;
+}
+
+#custom-wallpaper {
+  color: #fabd2f;
+}
+
+#custom-wallpaper:hover {
+  background-color: #3c3836;
 }
 
 #backlight {

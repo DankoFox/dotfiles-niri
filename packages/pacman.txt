@@ -16,6 +16,7 @@ waybar                  # Highly customizable Wayland status bar
 fuzzel                  # Fast Wayland application launcher / runner
 hyprlock                # GPU-accelerated Wayland screen locker (hyprwm)
 mako                    # Lightweight Wayland notification daemon
+awww                    # Wayland wallpaper daemon with animated transitions
 kitty                   # GPU-accelerated terminal emulator
 wl-clipboard            # Wayland clipboard utilities (wl-copy, wl-paste)
 cliphist                # Wayland clipboard history manager

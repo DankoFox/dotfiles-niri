@@ -8,7 +8,7 @@
     "modules-left": ["niri/workspaces", "idle_inhibitor", "custom/suspend", "custom/poweroff", "custom/media", "niri/window"],
     "modules-center": [],
     // 2020-10-21: disable "cpu" so it never forces a higher power state
-    "modules-right": ["tray", "pulseaudio", "network", "memory", "temperature#cpu", "temperature#gpu", "backlight", "keyboard-state", "battery", "battery#bat2", "clock"],
+    "modules-right": ["tray", "pulseaudio", "network", "memory", "temperature#cpu", "temperature#gpu", "custom/wallpaper", "backlight", "keyboard-state", "battery", "battery#bat2", "clock"],
       "niri/window": {
     "format": "{}",
     "max-length": 60
@@ -117,15 +117,19 @@
         "format": "  {temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
     },
+    "custom/wallpaper": {
+        "format": "󰸉",
+        "tooltip": true,
+        "tooltip-format": "Wallpaper\n• Left-click: Randomize wallpaper\n• Right-click: Choose wallpaper",
+        "on-click": "~/.config/waybar/scripts/cycle-wallpaper.sh",
+        "on-click-right": "~/.config/waybar/scripts/wallpaper-picker.sh"
+    },
     "backlight": {
-    "device": "intel_backlight",
-    "format": "{icon} {percent}",
-    "format-icons": ["󰃞", "󰃟", "󰃠"],
-    "on-click": "~/.config/waybar/scripts/cycleWall.sh",
-    "on-click-right": "~/.config/rofi/bin/selectBG",
-    "on-scroll-up": "brightnessctl set 1%+",
-    "on-scroll-down": "brightnessctl set 1%-",
-    "min-length": 6
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
+        "on-scroll-up": "brightnessctl set 5%+",
+        "on-scroll-down": "brightnessctl set 5%-",
+        "min-length": 6
     },
     "battery": {
         "states": {

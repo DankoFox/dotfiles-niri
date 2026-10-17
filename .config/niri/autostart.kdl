@@ -22,4 +22,7 @@ spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
 // Night light gamma daemon (Ho Chi Minh City: Lat 10.8, Lon 106.6, Night temp: 4000K)
 spawn-at-startup "wlsunset" "-l" "10.8" "-L" "106.6" "-t" "4000"
 
+// Wallpaper daemon and restore (awww)
+spawn-sh-at-startup "~/.config/waybar/scripts/init-wallpaper.sh"
+
 
