@@ -22,6 +22,8 @@ brightnessctl           # Screen backlight and brightness control
 playerctl               # Media player controller (MPRIS) for keyboard media keys
 xdg-desktop-portal      # Desktop portal frontend for screen sharing and file dialogues
 xdg-desktop-portal-gtk  # GTK backend for xdg-desktop-portal
+polkit-gnome            # Polkit authentication agent for GUI password prompts
+
 
 # --- Display / Login Manager ---
 ly                      # Lightweight TUI display manager
@@ -54,6 +56,8 @@ noto-fonts-emoji        # Emoji support
 nemo                    # Graphical file manager (configured in binds.kdl Mod+E)
 feh                     # Lightweight image viewer & wallpaper tool
 pavucontrol             # PulseAudio / PipeWire volume control GUI
+gnome-disk-utility      # Graphical disk management and formatting tool
+
 
 # --- System Daemons & Utilities ---
 earlyoom                # Early OOM daemon to prevent system freeze on low memory
