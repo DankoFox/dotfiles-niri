@@ -1,0 +1,66 @@
+# ~/.config/mako/config
+# Gruvbox Dark Soft notification theme with Iosevka Nerd Font
+
+# --- Global & Placement ---
+sort=-time
+layer=overlay
+anchor=top-right
+output=""
+max-visible=5
+max-history=20
+
+# --- Geometry & Margins ---
+width=340
+height=120
+margin=16,16,0
+padding=10
+border-size=3
+border-radius=2
+
+# --- Colors & Typography (Gruvbox Dark Soft) ---
+font=Iosevka Nerd Font 11
+background-color=#282828f2
+text-color=#ebdbb2
+border-color=#83a598
+progress-color=over #458588
+
+# --- Icons & Formatting ---
+icons=1
+max-icon-size=48
+icon-location=left
+markup=1
+actions=1
+format=<b>%s</b>\n%b
+
+# --- Timeouts & Behavior ---
+default-timeout=5000
+ignore-timeout=1
+
+# --- Interactive Bindings ---
+on-button-left=invoke-default-action
+on-button-middle=none
+on-button-right=dismiss
+on-touch=dismiss
+
+# --- Urgency Rules ---
+[urgency=low]
+border-color=#504945
+default-timeout=3000
+
+[urgency=normal]
+border-color=#83a598
+default-timeout=5000
+
+[urgency=high]
+border-color=#fb4934
+text-color=#fbf1c7
+default-timeout=0
+
+# --- Media / Music Player Rule ---
+[category=mpd]
+default-timeout=2500
+group-by=category
+
+# --- Do Not Disturb Mode ---
+[mode=dnd]
+invisible=1

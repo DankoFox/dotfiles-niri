@@ -15,6 +15,7 @@ xwayland-satellite      # Dedicated Xwayland manager outside the compositor
 waybar                  # Highly customizable Wayland status bar
 fuzzel                  # Fast Wayland application launcher / runner
 hyprlock                # GPU-accelerated Wayland screen locker (hyprwm)
+mako                    # Lightweight Wayland notification daemon
 kitty                   # GPU-accelerated terminal emulator
 wl-clipboard            # Wayland clipboard utilities (wl-copy, wl-paste)
 cliphist                # Wayland clipboard history manager
