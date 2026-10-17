@@ -1,6 +1,7 @@
 // Modular Niri Configuration
 // Backup of original saved to config.kdl.bak
 
+include "environment.kdl"
 include "autostart.kdl"
 include "input.kdl"
 include "layout.kdl"

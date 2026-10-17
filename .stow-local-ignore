@@ -3,5 +3,9 @@ bootstrap\.sh
 packages
 scripts
 README\.md
+AGENTS\.md
+GEMINI\.md
+\.agents
 \.git
 \.stow-local-ignore
+

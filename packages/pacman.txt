@@ -24,6 +24,18 @@ xdg-desktop-portal      # Desktop portal frontend for screen sharing and file di
 xdg-desktop-portal-gtk  # GTK backend for xdg-desktop-portal
 polkit-gnome            # Polkit authentication agent for GUI password prompts
 
+# --- Input Method (Vietnamese & Wayland IME) ---
+fcitx5                  # Next generation input method framework
+fcitx5-bamboo           # Best Vietnamese input method engine (Bamboo engine)
+fcitx5-configtool       # Graphic configuration tool for Fcitx5 (Qt-based)
+fcitx5-gtk              # GTK IM module & GLib DBus client
+fcitx5-qt               # Qt IM module (Qt5 & Qt6 integration)
+fcitx5-material-color   # Modern Material theme for Fcitx5 candidate box
+
+# --- Qt6 Framework & UI Libraries ---
+qt6-base                # Cross-platform application and UI framework (Qt6 core)
+qt6-declarative         # Classes for QML and JavaScript languages (Qt6)
+qt6-translations        # Translations for Qt6
 
 # --- Display / Login Manager ---
 ly                      # Lightweight TUI display manager

@@ -9,3 +9,6 @@ spawn-at-startup "waybar"
 // Polkit graphical authentication agent
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
+// Fcitx5 input method daemon
+spawn-at-startup "fcitx5" "-d"
+

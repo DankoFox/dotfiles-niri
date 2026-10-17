@@ -21,7 +21,7 @@ chmod +x bootstrap.sh
 ```
 
 ### What `bootstrap.sh` does automatically:
-1. **Package Databases**: Synchronizes pacman repositories and updates keyrings.
+1. **Package Databases & System Upgrade**: Synchronizes pacman repositories, updates keyrings, and performs a full system upgrade (`pacman -Syu`) to prevent library ABI version mismatches.
 2. **AUR Helper**: Detects `paru` (or `yay`). If missing, installs/builds `paru` automatically.
 3. **Package Installation**: Installs all official repository packages (`packages/pacman.txt`) and AUR packages (`packages/aur.txt`).
 4. **Shell Setup**: Sets default shell to `zsh` and installs `zsh-autosuggestions` and `zsh-syntax-highlighting` into `~/.zsh/`.

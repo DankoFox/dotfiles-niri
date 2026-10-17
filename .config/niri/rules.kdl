@@ -27,3 +27,9 @@ window-rule {
     geometry-corner-radius 6
     clip-to-geometry true
 }
+
+// Open Fcitx5 configuration tool and dialogs as floating
+window-rule {
+    match app-id=r#"fcitx"#
+    open-floating true
+}

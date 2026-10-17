@@ -46,13 +46,17 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # ------------------------------------------------------------------------------
-# 2. Update Package Databases & Keyrings
+# 2. Update Package Databases, Keyrings & System Upgrade
 # ------------------------------------------------------------------------------
-log_info "Synchronizing pacman package databases..."
+log_info "Synchronizing pacman package databases and updating keyrings..."
 sudo pacman -Sy --noconfirm archlinux-keyring 2>/dev/null || true
 if pacman -Qq endeavouros-keyring >/dev/null 2>&1; then
     sudo pacman -Sy --noconfirm endeavouros-keyring 2>/dev/null || true
 fi
+
+# Prevent partial upgrades and library ABI version mismatches (e.g. Qt6)
+log_info "Performing full system upgrade to maintain library consistency..."
+sudo pacman -Syu --noconfirm
 
 # Ensure base-devel and git are installed
 log_info "Ensuring base-devel and git are present..."
