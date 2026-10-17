@@ -2,22 +2,9 @@
 // Find more information on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Window-Rules
 
-// Work around WezTerm's initial configure bug
-// by setting an empty default-column-width.
+// Zen Browser Picture-in-Picture
 window-rule {
-    // This regular expression is intentionally made as specific as possible,
-    // since this is the default config, and we want no false positives.
-    // You can get away with just app-id="wezterm" if you want.
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
-}
-
-// Open the Firefox picture-in-picture player as floating by default.
-window-rule {
-    // This app-id regular expression will work for both:
-    // - host Firefox (app-id is "firefox")
-    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    match app-id=r#"zen"# title="^Picture-in-Picture$"
     open-floating true
 }
 
@@ -31,5 +18,51 @@ window-rule {
 // Open Fcitx5 configuration tool and dialogs as floating
 window-rule {
     match app-id=r#"fcitx"#
+    open-floating true
+}
+
+// Polkit GUI password prompt (authentication agent)
+window-rule {
+    match app-id=r#"polkit"#
+    match app-id=r#"^polkit-gnome-authentication-agent-1$"#
+    open-floating true
+    block-out-from "screencast"
+}
+
+// Audio volume control (Pavucontrol)
+window-rule {
+    match app-id=r#"pavucontrol"#
+    match app-id=r#"org\.pulseaudio\.pavucontrol"#
+    open-floating true
+    default-column-width { fixed 680; }
+    default-window-height { fixed 520; }
+}
+
+// Disk management utility (gnome-disk-utility)
+window-rule {
+    match app-id=r#"gnome-disks"#
+    match app-id=r#"org\.gnome\.DiskUtility"#
+    open-floating true
+    default-column-width { fixed 800; }
+    default-window-height { fixed 580; }
+}
+
+// Portal file pickers and file dialogs
+window-rule {
+    match app-id=r#"xdg-desktop-portal-gtk"#
+    match title=r#"^(Open Files?|Save Files?|Select a Folder|Choose Files?|Save As|Open Folder)"#
+    open-floating true
+}
+
+// Nemo file manager dialogs (Properties, file conflicts, transfer progress)
+window-rule {
+    match app-id=r#"nemo"# title=r#"(Properties|Operations|Conflict|Preferences)"#
+    match app-id=r#"nemo"# title=r#"Confirm to replace files"#
+    open-floating true
+}
+
+// Image viewer (feh)
+window-rule {
+    match app-id=r#"feh"#
     open-floating true
 }
