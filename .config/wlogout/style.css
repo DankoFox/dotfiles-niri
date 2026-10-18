@@ -1,0 +1,122 @@
+/* ==============================================================================
+ * wlogout - Gruvbox Dark Soft Theme
+ * ============================================================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes buttonFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 12px;
+  font-weight: bold;
+  background-image: none;
+  box-shadow: none;
+}
+
+window {
+  background-color: rgba(40, 40, 40, 0.85);
+  animation: fadeIn 0.14s ease-out;
+}
+
+button {
+  color: #ebdbb2;
+  background-color: #32302f;
+  border: 1px solid #504945;
+  border-radius: 12px;
+  margin: 0px;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-position: center 26px;
+  background-size: 26px;
+  animation: buttonFadeIn 0.16s ease-out;
+  transition: all 0.15s ease-in-out;
+}
+
+button label {
+  margin-top: 48px;
+  margin-bottom: 8px;
+}
+
+button:focus,
+button:active,
+button:hover {
+  background-color: #3c3836;
+  outline-style: none;
+}
+
+/* Individual button hover accent colors */
+#lock:focus,
+#lock:hover {
+  border-color: #fabd2f; /* Gruvbox yellow */
+  color: #fabd2f;
+}
+
+#logout:focus,
+#logout:hover {
+  border-color: #fe8019; /* Gruvbox orange */
+  color: #fe8019;
+}
+
+#suspend:focus,
+#suspend:hover {
+  border-color: #83a598; /* Gruvbox blue */
+  color: #83a598;
+}
+
+#hibernate:focus,
+#hibernate:hover {
+  border-color: #d3869b; /* Gruvbox purple */
+  color: #d3869b;
+}
+
+#reboot:focus,
+#reboot:hover {
+  border-color: #b8bb26; /* Gruvbox green */
+  color: #b8bb26;
+}
+
+#shutdown:focus,
+#shutdown:hover {
+  border-color: #fb4934; /* Gruvbox red */
+  color: #fb4934;
+}
+
+/* Button icon bindings */
+#lock {
+  background-image: image(url("icons/lock.svg"), url("/usr/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+  background-image: image(url("icons/logout.svg"), url("/usr/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+  background-image: image(url("icons/suspend.svg"), url("/usr/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+  background-image: image(url("icons/hibernate.svg"), url("/usr/share/wlogout/icons/hibernate.png"));
+}
+
+#reboot {
+  background-image: image(url("icons/reboot.svg"), url("/usr/share/wlogout/icons/reboot.png"));
+}
+
+#shutdown {
+  background-image: image(url("icons/shutdown.svg"), url("/usr/share/wlogout/icons/shutdown.png"));
+}

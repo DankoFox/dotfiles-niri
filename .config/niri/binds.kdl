@@ -274,9 +274,9 @@ binds {
     // which ensures niri always processes them, even when an inhibitor is active.
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
-    // The quit action will show a confirmation dialog to avoid accidental exits.
-    Mod+Shift+E { quit; }
-    Ctrl+Alt+Delete { quit; }
+    // Wayland power / logout menu (wlogout)
+    Mod+Shift+E { spawn-sh "~/.config/wlogout/toggle-wlogout.sh"; }
+    Ctrl+Alt+Delete { spawn-sh "~/.config/wlogout/toggle-wlogout.sh"; }
 
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.

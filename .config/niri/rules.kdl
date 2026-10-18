@@ -67,6 +67,14 @@ window-rule {
     open-floating true
 }
 
+// Floating utility terminals spawned from Waybar (glances, nmtui, etc.)
+window-rule {
+    match app-id=r#"waybar-float"#
+    open-floating true
+    default-column-width { fixed 860; }
+    default-window-height { fixed 560; }
+}
+
 // Place wallpaper daemon in the stationary backdrop layer so it does not scroll with workspaces
 layer-rule {
     match namespace=r#"^(awww-daemon|swww-daemon)$"#

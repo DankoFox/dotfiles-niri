@@ -13,6 +13,7 @@ STATE_FILE="${XDG_RUNTIME_DIR:-/tmp}/wlsunset_state_${UID}"
 if ! pgrep -x wlsunset > /dev/null; then
     wlsunset -l "$LAT" -L "$LON" -t "$NIGHT_TEMP" &
     echo "auto" > "$STATE_FILE"
+    pkill -RTMIN+8 waybar 2>/dev/null || true
     notify-send -a "Night Light" -i display "Night Light" "Started wlsunset (Auto: ${LAT}°N, ${LON}°E)" -t 2500
     exit 0
 fi
@@ -36,3 +37,7 @@ case "$CURRENT_STATE" in
         notify-send -a "Night Light" -i weather-sunset "Night Light" "Mode: Auto (Location Schedule)" -t 2000
         ;;
 esac
+
+# Signal Waybar custom/nightlight module to update icon instantly
+pkill -RTMIN+8 waybar 2>/dev/null || true
+
