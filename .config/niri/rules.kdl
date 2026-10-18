@@ -66,3 +66,9 @@ window-rule {
     match app-id=r#"feh"#
     open-floating true
 }
+
+// Place wallpaper daemon in the stationary backdrop layer so it does not scroll with workspaces
+layer-rule {
+    match namespace=r#"^(awww-daemon|swww-daemon)$"#
+    place-within-backdrop true
+}
