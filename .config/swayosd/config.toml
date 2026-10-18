@@ -1,0 +1,8 @@
+# ==============================================================================
+# SwayOSD Configuration
+# ==============================================================================
+
+[server]
+# Vertical placement from the top edge:
+# 0.5 = exact vertical center, 0.85 = default, 0.90 = slightly lower towards bottom
+top_margin = 0.90

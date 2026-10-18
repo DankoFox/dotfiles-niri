@@ -1,0 +1,56 @@
+/* ==============================================================================
+ * SwayOSD - Gruvbox Dark Soft Theme
+ * ============================================================================== */
+
+window#osd {
+  background: rgba(40, 40, 40, 0.92);
+  border: 2px solid #504945;
+  border-radius: 12px;
+  color: #ebdbb2;
+  padding: 14px 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+}
+
+/* Level / Progress indicator bar */
+progressbar {
+  background: transparent;
+  border-radius: 6px;
+  min-height: 8px;
+}
+
+progressbar trough {
+  background: rgba(60, 56, 54, 0.85);
+  border-radius: 6px;
+  min-height: 8px;
+  min-width: 160px;
+}
+
+progressbar progress {
+  background: #fabd2f; /* Gruvbox bright yellow accent */
+  border-radius: 6px;
+  min-height: 8px;
+  min-width: 0px;
+}
+
+/* Icons and Labels */
+image {
+  color: #ebdbb2;
+}
+
+image:disabled {
+  opacity: 0.45;
+  color: #a89984;
+}
+
+label {
+  color: #ebdbb2;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Muted / Lock states */
+.muted,
+.locked {
+  color: #fb4934; /* Gruvbox red */
+}

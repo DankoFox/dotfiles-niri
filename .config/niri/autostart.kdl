@@ -28,4 +28,8 @@ spawn-sh-at-startup "~/.config/waybar/scripts/init-wallpaper.sh"
 // Idle management daemon (hypridle)
 spawn-at-startup "hypridle"
 
+// On-screen display daemon (swayosd)
+spawn-at-startup "swayosd-server"
+spawn-at-startup "pkexec" "/usr/bin/swayosd-libinput-backend"
+
 
