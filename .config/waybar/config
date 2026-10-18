@@ -20,16 +20,16 @@
     "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
-      "1": "いち",
-      "2": "に",
-      "3": "さん",
-      "4": "よん",
-      "5": "ご",
-      "6": "ろく",
-      "7": "なな",
-      "8": "はち",
-      "9": "きゅう",
-      "10": "じゅう"
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "十"
     }
   },
 
@@ -89,10 +89,23 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "tooltip-format": "<span color='#fabd2f'><big><b>{:%Y %B}</b></big></span>\n<tt><small>{calendar}</small></tt>",
         // "format-alt": "{:%I:%M:%S}",
         "format": "{:%Y-%m-%d %I:%M}",
-        "interval": 60
+        "interval": 60,
+        "calendar": {
+            "mode"             : "month",
+            "weeks-pos"        : "left",
+            "first-day-of-week": 1,
+            "on-scroll"        : 1,
+            "format": {
+                "months":     "<span color='#fabd2f'><b>{}</b></span>",
+                "days":       "<span color='#ebdbb2'><b>{}</b></span>",
+                "weeks":      "<span color='#83a598'><b>W{}</b></span>",
+                "weekdays":   "<span color='#fe8019'><b>{}</b></span>",
+                "today":      "<span color='#fb4934'><b><u>{}</u></b></span>"
+            }
+        },
     },
     "cpu": {
         "format": "{usage}% ",

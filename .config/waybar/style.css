@@ -150,6 +150,16 @@ label:focus {
   background-color: #000000;
 }
 
+tooltip {
+  background-color: #282828;
+  border: 1px solid #504945;
+  border-radius: 6px;
+}
+
+tooltip label {
+  color: #ebdbb2;
+}
+
 #custom-wallpaper {
   color: #fabd2f;
 }
