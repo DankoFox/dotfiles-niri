@@ -5,6 +5,7 @@ alias ll='eza -lbF -all --icons'
 alias llm='eza -lbGd --sort=modified'
 alias la='eza -lbhHigUmuSa --time-style=long-iso --color-scale -all -all --icons'
 alias lx='eza -lbhHigUmuSa@ --time-style=long-iso --color-scale'
+[[ "$TERM" == "xterm-kitty" ]] && alias ssh="TERM=xterm-256color ssh"
 
 # --- System (Arch/Pacman) ---
 alias pac='sudo pacman -S'
