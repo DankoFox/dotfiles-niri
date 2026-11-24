@@ -80,3 +80,9 @@ layer-rule {
     match namespace=r#"^(awww-daemon|swww-daemon)$"#
     place-within-backdrop true
 }
+
+window-rule {
+    match app-id="gamescope"
+    variable-refresh-rate true
+    open-fullscreen true
+}
